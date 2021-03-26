@@ -68,7 +68,7 @@ The ugly `String` property is because the JavaScript version sometimes returns l
 See also the README for the [JavaScript path-to-regexp](https://github.com/pillarjs/path-to-regexp) not all of the concepts is documented here currently.
 
 ## The future.
-This is the path matching library JavaScript frameworks like [express](https://npmjs.com/package/express) and [koa-router](https://npmjs.com/package/koa-router) use. I'm a fan of those frameworks and I want to see a Go framework similar to them and to make that happen I ported this little part of it and hope that someone will make it happen someday. I'll make it happen if no one does ;)
+This is the path matching library JavaScript frameworks like [express](https://npmjs.com/package/express) and [koa-router](https://npmjs.com/package/koa-router) use. I'm a fan of those frameworks and I want to see more Go frameworks similar to them. So here's a starting point to port some of the JavaScript ecosystem ;)
 
 ## TODO
 - `Compile` "Reverse" Path-to-Regexp API

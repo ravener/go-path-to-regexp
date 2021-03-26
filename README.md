@@ -5,14 +5,14 @@ This is a golang port of [github.com/pillarjs/path-to-regexp](https://github.com
 
 ## Install
 ```sh
-$ go get github.com/pollen5/go-path-to-regexp
+$ go get github.com/ravener/go-path-to-regexp
 ```
 
 ## Usage
 Import it
 ```go
 import (
-  "github.com/pollen5/go-path-to-regexp"
+  "github.com/ravener/go-path-to-regexp"
 )
 ```
 The package is exposed via `pathtoregexp`

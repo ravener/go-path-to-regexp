@@ -4,27 +4,32 @@ Turn a url path such as `/users/:name` in to a regular expression.
 This is a golang port of [github.com/pillarjs/path-to-regexp](https://github.com/pillarjs/path-to-regexp) (parts of the README is also copied from it)
 
 ## Install
+
 ```sh
 $ go get github.com/ravener/go-path-to-regexp
 ```
 
 ## Usage
 Import it
+
 ```go
 import (
   "github.com/ravener/go-path-to-regexp"
 )
 ```
+
 The package is exposed via `pathtoregexp`
 
 ```go
 pathtoregexp.PathToRegexp("/users/:name", options)
 ```
+
 Returns `(*regexp.Regexp, []*Token, error)` the matched output of the regexp will contain the named parameters.
 
 Keys is list of named parameters found, the JavaScript API passed them into a given array, here it is a return value instead.
 
 **Passing Options:**
+
 ```go
 options := pathtoregexp.NewOptions() // NewOptions returns defaults.
 // Modify options as needed
@@ -33,6 +38,7 @@ pathtoregexp.PathToRegexp("/users/:name", options)
 // To just use default options you can also pass nil
 pathtoregexp.PathToRegexp("/users/:name", nil)
 ```
+
 - **Available Options**
   - **Sensitive** When `true` the regexp will be case sensitive. (default: `false`)
   - **Strict** When `true` the regexp allows an optional trailing delimiter to match. (default: `false`)
